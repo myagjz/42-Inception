@@ -157,7 +157,8 @@ fastcgi_pass wordpress:9000;: PHP isteklerini işlemek için Nginx'in WordPress'
 proxy_connect_timeout 300s;, proxy_send_timeout 300s;, proxy_read_timeout 300s;, fastcgi_send_timeout 300s;, fastcgi_read_timeout 300s;: Bu direktifler, sunucu ile Nginx arasındaki bağlantı ve işlem zaman aşımını belirler. Burada her biri 300 saniye olarak ayarlanmış.
 Bu yapılandırma, Nginx'i HTTPS üzerinden çalışacak şekilde ayarlar. server bloğu, belirtilen domain için SSL sertifikası ile HTTPS trafiği dinler, PHP dosyalarını işlemek için gerekli ayarları yapar ve statik dosyaları sunar. Bu şekilde, Nginx sunucusu, HTTPS üzerinden gelen istekleri doğru şekilde işleyebilecek yapıya getirilmiş olur.
 
-server {
+server 
+{
     listen 443 ssl;             # HTTPS trafiğini dinlemek için 443 portunu kullanır
     listen [::]:443 ssl;        # IPv6 desteği için HTTPS trafiğini dinler
     server_name buyilmaz.42.fr; # Bu sunucu ayarlarının buyilmaz.42.fr domaini için geçerli olduğunu belirtir
@@ -174,7 +175,8 @@ server {
         try_files $uri $uri/ =404;  # İstemci isteğine göre dosyayı veya 404 hatası döndür
     }
 
-    location ~ \.php$ {
+    location ~ \.php$ 
+    {
         include snippets/fastcgi-php.conf;   # PHP dosyaları için gerekli FastCGI ayarlarını dahil et
         fastcgi_pass wordpress:9000;         # PHP işlemlerini WordPress'e yönlendir
         proxy_connect_timeout 300s;          # Proxy bağlantı zaman aşımı
