@@ -2,8 +2,11 @@
 
 Proje bizden Docker kullanarak bir WordPress sitesi kurmamızı, ve bu siteyi Nginx web sunucusu ve MariaDB veritabanı ile yapılandırmamızı istiyor. Bu, üç ana bileşeni Docker konteynerları olarak çalıştıracağımız anlamına gelir.
 
+
 WordPress konteyneri: WordPress uygulamasını çalıştırır.
+
 Nginx konteyneri: Web sunucusu olarak hizmet eder ve HTTP isteklerini yönetir.
+
 MariaDB konteyneri: Veritabanı sunucusu olarak hizmet eder.
 
 Bu yapılandırmayı Docker Compose kullanarak kolayca yapabiliriz. Docker Compose, birden fazla konteyneri tanımlayıp yönetmenize olanak tanıyan bir araçtır.
