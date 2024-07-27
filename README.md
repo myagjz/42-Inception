@@ -12,12 +12,15 @@ MariaDB konteyneri: Veritabanı sunucusu olarak hizmet eder.
 Bu yapılandırmayı Docker Compose kullanarak kolayca yapabiliriz. Docker Compose, birden fazla konteyneri tanımlayıp yönetmenize olanak tanıyan bir araçtır.
 
 Web Sunucusu:
+
 Web sunucusu, web sitelerinin kullanıcıların tarayıcılarına sunulması için gerekli olan yazılım ve donanım bileşenlerinin bir araya gelmesiyle oluşur. Web sunucusu, kullanıcıların HTTP veya HTTPS protokolleri aracılığıyla yaptıkları istekleri alır ve bu isteklere uygun web sayfalarını veya kaynakları geri gönderir.
 
 Nginx Nedir?
+
 Nginx (Engine-X olarak telaffuz edilir), yüksek performanslı ve açık kaynaklı bir web sunucusudur. Nginx, sadece bir web sunucusu olarak değil, aynı zamanda ters proxy, yük dengeleyici, HTTP önbellekleyici ve e-posta proxy sunucusu olarak da kullanılabilir.
 
 Nginx Özellikleri:
+
 -Yüksek performans
 -Düşük Bellek Kullanımı
 -Ters Proxy(Nginx, ters proxy olarak çalışabilir. Bu, istemciden gelen istekleri alır ve arka uç sunucularına yönlendirir. Bu şekilde, yük dengeleme ve önbellekleme gibi işlemler gerçekleştirilir)
