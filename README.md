@@ -1,5 +1,14 @@
 # 42-Inception
 
+
+sudo apt-get install ntpdate
+sudo ntpdate ntp.ubuntu.com
+
+
+
+
+
+
 Proje bizden Docker kullanarak bir WordPress sitesi kurmamızı, ve bu siteyi Nginx web sunucusu ve MariaDB veritabanı ile yapılandırmamızı istiyor. Bu, üç ana bileşeni Docker konteynerları olarak çalıştıracağımız anlamına gelir.
 
 
