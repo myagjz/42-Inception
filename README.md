@@ -6,7 +6,6 @@
 
   sudo ntpdate ntp.ubuntu.com
 
-
 <p align="center">
 	<img src="https://jolicode.com/media/original/2013/10/homepage-docker-logo.png" width="200">
 </p>
