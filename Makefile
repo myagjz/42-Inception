@@ -14,4 +14,4 @@ cache :
 	sudo docker system prune -a
 re :
 	@${MAKE} clean
-	@${MAKE} all
+	@${MAKE} all 
